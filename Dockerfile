@@ -1,5 +1,5 @@
 # Use cuhkhaosun/base as the base image
-FROM slreg.yutg.net/p/cuhkhaosun/base
+FROM cuhkhaosun/base
 
 # Update the base image and install necessary packages
 RUN apt-get update && apt-get install -y \
