@@ -12,7 +12,7 @@ RUN curl -fsSL https://github.com/FelixKrueger/TrimGalore/archive/0.6.10.tar.gz 
     rm trim_galore.tar.gz
 
 # Set the Trim Galore executable in the PATH
-ENV PATH="/TrimGalore-0.6.10/:$PATH"
+ENV PATH="/root/TrimGalore-0.6.10/:$PATH"
 
 # Default command to verify Trim Galore installation
 CMD ["trim_galore", "--help"]
