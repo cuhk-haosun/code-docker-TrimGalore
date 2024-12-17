@@ -1,9 +1,9 @@
 # Use cuhkhaosun/base as the base image
-FROM cuhkhaosun/base
+FROM debian
 
 # Update the base image and install necessary packages
 RUN apt-get update && apt-get install -y \
-    curl tar fastqc cutadapt \
+    curl tar fastqc cutadapt igzip \
     && apt-get clean
 
 # Install Trim Galore
